@@ -44,3 +44,15 @@
     letter-spacing: -0.02em;
   }
 }
+
+@layer components {
+  .route-card {
+    @apply border border-ink/15 p-6 bg-bg flex flex-col gap-3 transition-colors;
+  }
+  .route-card:hover {
+    @apply border-ink/40;
+  }
+  .route-km {
+    @apply font-serif text-5xl sm:text-6xl tracking-tight leading-none;
+  }
+}

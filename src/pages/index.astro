@@ -2,10 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
+import Routes from '../components/Routes.astro';
 ---
 <BaseLayout title="Kärsimysleiri — 7.–9.8.2026">
   <Hero />
-  <main class="px-6 max-w-[64ch] mx-auto">
-    <About />
+  <main class="px-6">
+    <div class="max-w-[64ch] mx-auto">
+      <About />
+    </div>
+    <div class="max-w-[90ch] mx-auto">
+      <Routes />
+    </div>
   </main>
 </BaseLayout>
