@@ -1,0 +1,36 @@
+---
+import { site } from '../content/site.ts';
+import SectionLabel from './SectionLabel.astro';
+---
+<section id="sisaltyy" aria-labelledby="sisaltyy-heading" class="py-20 border-t border-ink/10">
+  <SectionLabel>— mitä sisältyy —</SectionLabel>
+  <h2 id="sisaltyy-heading" class="text-section font-serif leading-tight mb-12">
+    Itse pyöräily on omasi
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-sm uppercase tracking-[0.2em] text-ink mb-4">Sisältyy</h3>
+      <ul class="space-y-2 text-base">
+        {site.included.yes.map((item) => (
+          <li class="flex gap-3">
+            <span class="text-accent" aria-hidden="true">●</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-sm uppercase tracking-[0.2em] text-ink mb-4">Ei sisälly</h3>
+      <ul class="space-y-2 text-base text-muted">
+        {site.included.no.map((item) => (
+          <li class="flex gap-3">
+            <span aria-hidden="true">—</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
