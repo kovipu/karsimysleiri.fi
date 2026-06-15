@@ -1,0 +1,25 @@
+---
+import { site } from '../content/site.ts';
+const { hero } = site;
+---
+<header class="relative px-6 pt-24 pb-20 sm:pt-32 sm:pb-28 max-w-[80ch] mx-auto">
+  <h1 class="text-hero font-serif leading-[0.9] tracking-tight">
+    {hero.title}
+  </h1>
+
+  <div class="mt-8 flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-6">
+    <p class="text-sm uppercase tracking-[0.25em] text-muted">
+      {hero.dates}
+    </p>
+    <p class="text-sm uppercase tracking-[0.25em] text-muted">
+      {hero.location}
+    </p>
+  </div>
+
+  <p class="mt-10 max-w-[40ch] text-lg font-serif italic text-ink/80">
+    {hero.tagline}
+  </p>
+
+  {/* Placeholder slot for hero graphic — replace later */}
+  {/* <div class="mt-12 aspect-[3/2] bg-ink/5 rounded-sm" aria-hidden="true" /> */}
+</header>

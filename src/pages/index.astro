@@ -1,14 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { site } from '../content/site.ts';
+import Hero from '../components/Hero.astro';
 ---
 <BaseLayout title="Kärsimysleiri — 7.–9.8.2026">
-  <main class="px-6 py-16 max-w-[64ch] mx-auto">
-    <h1 class="text-hero font-serif leading-[0.95] tracking-tight">
-      {site.hero.title}
-    </h1>
-    <p class="mt-4 text-sm uppercase tracking-[0.25em] text-muted">
-      {site.hero.dates} · {site.hero.location}
-    </p>
+  <Hero />
+  <main class="px-6 max-w-[64ch] mx-auto">
+    {/* sections will go here */}
   </main>
 </BaseLayout>
