@@ -1,16 +1,14 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../content/site.ts';
 ---
-<html lang="fi">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" href="/fonts/Fraunces-VariableFont.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/Inter-VariableFont.woff2" as="font" type="font/woff2" crossorigin />
-    <title>Kärsimysleiri</title>
-  </head>
-  <body class="bg-bg text-ink font-sans">
-    <h1 class="text-hero font-serif">Kärsimysleiri</h1>
-  </body>
-</html>
+<BaseLayout title="Kärsimysleiri — 7.–9.8.2026">
+  <main class="px-6 py-16 max-w-[64ch] mx-auto">
+    <h1 class="text-hero font-serif leading-[0.95] tracking-tight">
+      {site.hero.title}
+    </h1>
+    <p class="mt-4 text-sm uppercase tracking-[0.25em] text-muted">
+      {site.hero.dates} · {site.hero.location}
+    </p>
+  </main>
+</BaseLayout>
