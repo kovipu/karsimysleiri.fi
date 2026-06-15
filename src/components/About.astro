@@ -1,0 +1,13 @@
+---
+import { site } from '../content/site.ts';
+import SectionLabel from './SectionLabel.astro';
+---
+<section id="tapahtuma" aria-labelledby="tapahtuma-heading" class="py-20 border-t border-ink/10">
+  <SectionLabel>— tapahtuma —</SectionLabel>
+  <h2 id="tapahtuma-heading" class="text-section font-serif leading-tight mb-8">
+    Mikä on Kärsimysleiri?
+  </h2>
+  <div class="space-y-6 text-lg leading-relaxed">
+    {site.about.map((paragraph) => <p>{paragraph}</p>)}
+  </div>
+</section>
