@@ -1,0 +1,19 @@
+---
+import { site } from '../content/site.ts';
+import SectionLabel from './SectionLabel.astro';
+---
+<section id="usein-kysyttya" aria-labelledby="faq-heading" class="py-20 border-t border-ink/10">
+  <SectionLabel>— usein kysyttyä —</SectionLabel>
+  <h2 id="faq-heading" class="text-section font-serif leading-tight mb-10">
+    Usein kysyttyä
+  </h2>
+
+  <div>
+    {site.faq.map((item) => (
+      <details class="faq-item">
+        <summary>{item.q}</summary>
+        <p class="faq-answer">{item.a}</p>
+      </details>
+    ))}
+  </div>
+</section>
