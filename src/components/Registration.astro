@@ -1,0 +1,23 @@
+---
+import { site } from '../content/site.ts';
+import SectionLabel from './SectionLabel.astro';
+const { registration, organizer } = site;
+---
+<section id="ilmoittautuminen" aria-labelledby="ilmo-heading" class="py-20 border-t border-ink/10">
+  <SectionLabel>— ilmoittautuminen —</SectionLabel>
+
+  <div class="bg-accent/10 border border-accent/20 p-8 sm:p-10">
+    <h2 id="ilmo-heading" class="text-section font-serif leading-tight mb-4">
+      Ilmoittautuminen
+    </h2>
+    <p class="text-sm uppercase tracking-[0.2em] text-accent mb-4">
+      Status: {registration.status}
+    </p>
+    <p class="text-lg leading-relaxed mb-2">
+      {registration.note}
+    </p>
+    <p class="text-base text-muted mt-6">
+      Järjestää: {organizer.name}. {organizer.contact}
+    </p>
+  </div>
+</section>
