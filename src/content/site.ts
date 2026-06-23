@@ -2,53 +2,51 @@ export const site = {
   hero: {
     title: "Kärsimysleiri",
     dates: "7.–9.8.2026",
-    location: "Rusko, Suomi",
-    tagline: "Omavarainen gravel-ultra Vahdon metsästä.",
+    location: "Rusko (Vahto)",
+    tagline: "Omavarainen gravel-tyhmäpyöräily"
   },
 
   about: [
-    "Kärsimysleiri on omavarainen pitkän matkan gravel-tapahtuma elokuun ensimmäisenä viikonloppuna. Lähtö ja maali sijaitsevat Vahdon metsästysmajalla Ruskolla.",
-    "Tapahtuma ei ole kilpailu. Se on yhteinen viikonloppu pitkien hiekkateiden, pohjoismaisen kesäyön ja sen valossa testattujen rajojen äärellä. Jokainen ajaa omaa matkaansa, omaan tahtiinsa.",
+    "Kärsimysleiri on koko viikonlopun mittainen soratieultra elokuun ensimmäisenä viikonloppuna. Lähtö ja maali on Vahdon metsästysmajalla Ruskolla.",
+    "Tapahtuma ei ole kilpailu, voit suorittaa reitin omaa tahtiasi, samoilla silmillä tai sitten retkeillen.",
+    "Osallistumismaksu on 35€."
   ],
 
   routes: [
     {
-      id: "iso",
-      name: "Iso kärsimys",
-      km: 450,
-      ascent: "TBA",
-      description:
-        "Kolmesta reitistä raskain. Kahden vuorokauden urakka, joka kiertää laajasti Varsinais-Suomen ja Satakunnan sorateiden parhaat osuudet.",
-    },
-    {
-      id: "keski",
-      name: "Keskimmäinen",
-      km: 300,
-      ascent: "TBA",
-      description:
-        "Klassinen ultramatka. Kovavauhtisille yhden vuorokauden suoritus, rauhallisemmille kaksi päivää maisemia ja metsää.",
-    },
-    {
       id: "pikku",
-      name: "Pikku kärsimys",
       km: 200,
       ascent: "TBA",
       description:
-        "Lyhyin vaihtoehto — silti pitkä päivä satulassa. Hyvä sisäänajo ultratapahtumiin tai täysipäiväinen kärsimys omaan tahtiin.",
+        "Sopivasti kärsimystä."
+    },
+    {
+      id: "keski",
+      km: 310,
+      ascent: "2329m",
+      description:
+        "Vähän enemmän kärsimystä.",
+    },
+    {
+      id: "iso",
+      km: 467,
+      ascent: "4212m",
+      description:
+        "Kahjo reissu."
     },
   ],
 
   included: {
     yes: [
       "Kisakeskus Vahdon metsästysmajalla",
-      "Hiilarivoittoinen ateria maalissa",
-      "Juomat",
+      "Ajoseuraa",
+      "Ravintoa maalissa",
       "Sauna",
       "Nukkumamahdollisuus maalissa",
     ],
     no: [
       "Kuljetus paikalle",
-      "Reitin huolto tai tarkistuspisteet",
+      "Reitin huolto",
       "Ruoka ja juoma matkalla",
       "Varaosat ja varusteet",
     ],
@@ -57,11 +55,11 @@ export const site = {
   practical: [
     {
       title: "Lähtö",
-      body: "Lähtöajat ja tarkat porrastukset reittikohtaisesti ilmoitetaan lähempänä tapahtumaa. Kaikki lähdöt Vahdon metsästysmajalta.",
+      body: "Yhteislähtö Vahdon metsästysmajalta perjantaina 7.8. kello 18. Reissuun saa halutessaan lähteä myöhemminkin."
     },
     {
       title: "Mitä mukaan",
-      body: "Toimiva polkupyörä, riittävä valaistus, navigointiin sopiva laite, omat huoltotarvikkeet ja varusteet vaihteleviin keliolosuhteisiin. Yön yli kestävillä reiteillä myös valaisin ja heijastimet ovat pakolliset.",
+      body: "Toimiva polkupyörä, navigointiin sopiva laite, omat huoltotarvikkeet ja varusteet vaihteleviin keliolosuhteisiin. Yön yli kestävillä reiteillä myös valaisin on pakollinen.",
     },
     {
       title: "Reitit ja navigointi",
@@ -77,36 +75,8 @@ export const site = {
     },
   ],
 
-  faq: [
-    {
-      q: "Kenelle Kärsimysleiri on?",
-      a: "Aikuisille pyöräilijöille, jotka tietävät mihin ryhtyvät. Tapahtuma on omavarainen ja matkat ovat pitkiä — itsenäinen huolto ja kohtuullinen kokemus pitkistä ajoista ovat välttämättömyyksiä.",
-    },
-    {
-      q: "Millainen pyörä reiteille tarvitaan?",
-      a: "Gravel- tai cyclocross-pyörä on luontevin valinta. Maastopyörä toimii. Maantiepyörä ei sovellu — alustana on pääosin soraa.",
-    },
-    {
-      q: "Voiko reitin keskeyttää?",
-      a: "Voi. Tapahtuma ei ole kilpailu eikä keskeyttämisestä seuraa mitään. Ilmoita keskeytyksestä järjestäjälle, jotta tiedämme sinun olevan turvassa.",
-    },
-    {
-      q: "Onko aikarajaa?",
-      a: "Maali sulkeutuu sunnuntai-iltana. Tarkat aikarajat reittikohtaisesti ilmoitetaan lähempänä tapahtumaa.",
-    },
-    {
-      q: "Voiko tulla katsomaan tai kannustamaan?",
-      a: "Maalialueella Vahdon metsästysmajalla saa toki käydä. Reitin varrella ei ole virallisia katsomopaikkoja.",
-    },
-  ],
-
-  registration: {
-    status: "tulossa",
-    note: "Ilmoittautuminen avautuu myöhemmin. Tiedot päivittyvät tänne.",
-  },
-
   organizer: {
-    name: "Kärsimysleirin järjestäjä",
+    name: "Konsta Purtsi",
     contact: "Yhteystiedot päivittyvät pian.",
   },
 } as const;

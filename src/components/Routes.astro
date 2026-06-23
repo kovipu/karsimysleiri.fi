@@ -2,20 +2,22 @@
 import { site } from '../content/site.ts';
 import SectionLabel from './SectionLabel.astro';
 ---
-<section id="reitit" aria-labelledby="reitit-heading" class="py-20 border-t border-ink/10">
+<section id="reitit" aria-labelledby="reitit-heading" class="px-3 md:px-6 py-20 border-t border-ink/10">
   <SectionLabel>— reitit —</SectionLabel>
   <h2 id="reitit-heading" class="text-section font-serif leading-tight mb-4">
-    Kolme matkaa, sama metsä
+    Kolme ultrapitkää soratiereittiä
   </h2>
   <p class="text-lg text-muted mb-12 max-w-[50ch]">
-    Valitse pituus, joka vastaa kuntoa ja kunnianhimoa. Kaikki reitit lähtevät ja päättyvät Vahdon metsästysmajalle.
+  Valitse reitti, joka vastaa kuntoasi ja kunnianhimoasi.
+  Reitit sisältävät enimmäkseen nopeita sorateitä ja myös vähän pikitietä.
+  Kaikki reitit lähtevät ja päättyvät Vahdon metsästysmajalle, ja ajavat alkumatkan samaa soratietä.
+  Voit vapaasti muuttaa mielesi valitsemastasi reitistä myös lennosta.
   </p>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 -mx-2 sm:mx-0">
     {site.routes.map((route) => (
       <article class="route-card">
         <p class="route-km">{route.km}<span class="text-xl text-muted ml-1">km</span></p>
-        <h3 class="text-sm uppercase tracking-[0.2em] text-ink">{route.name}</h3>
         <p class="text-sm text-muted">Nousua: {route.ascent}</p>
         <p class="text-base leading-relaxed mt-2">{route.description}</p>
       </article>
