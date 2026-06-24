@@ -9,14 +9,14 @@ export const site = {
   about: [
     "Kärsimysleiri on koko viikonlopun mittainen soratieultra elokuun ensimmäisenä viikonloppuna. Lähtö ja maali on Vahdon metsästysmajalla Ruskolla.",
     "Tapahtuma ei ole kilpailu, voit suorittaa reitin omaa tahtiasi, samoilla silmillä tai sitten retkeillen.",
-    "Osallistumismaksu on 35€."
+    "Osallistumismaksu on 40€."
   ],
 
   routes: [
     {
       id: "pikku",
-      km: 200,
-      ascent: "TBA",
+      km: 242,
+      ascent: "1803m",
       description:
         "Sopivasti kärsimystä."
     },
@@ -55,7 +55,7 @@ export const site = {
   practical: [
     {
       title: "Lähtö",
-      body: "Yhteislähtö Vahdon metsästysmajalta perjantaina 7.8. kello 18. Reissuun saa halutessaan lähteä myöhemminkin."
+      body: "Yhteislähtö Vahdon metsästysmajalta. Voit valita kahdesta lähtöryhmästä: perjantai kello 18:00 tai lauantai kello 9:00."
     },
     {
       title: "Mitä mukaan",
